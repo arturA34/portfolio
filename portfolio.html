@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>~/dev/portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/portfolio.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-dot"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <span>root@</span>arturdev<span>:~$</span>
+  </div>
+  <div class="nav-links">
+    <a href="#about">about</a>
+    <a href="#projects">projects</a>
+    <a href="#testimonials">reviews</a>
+    <a href="#contact">contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-prompt">
+        <span class="prompt-host">artur</span>
+        <span class="text-dim">@</span>
+        <span class="prompt-host">server</span>
+        <span class="text-dim">:</span>
+        <span class="prompt-path">~/portfolio</span>
+        <span class="prompt-dollar">$</span>
+        <span class="text-dim">cat whoami.txt</span>
+      </div>
+      <div class="hero-name glitch" data-text="ARTUR DEV">ARTUR DEV</div>
+      <div class="hero-role">
+        Backend Engineer &nbsp;/&nbsp; <span class="highlight">System Architect</span> &nbsp;/&nbsp; API Builder
+      </div>
+
+      <div class="hero-bio-block fade-in">
+        <p>Пишу код, который работает в продакшне без падений. Проектирую масштабируемые системы, строю API, которые хочется использовать. 5 лет в боевых условиях.</p>
+      </div>
+
+      <div class="hero-stats fade-in">
+        <div class="hero-stat">
+          <div class="stat-num">5+</div>
+          <div class="stat-label">лет опыта</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-num">40+</div>
+          <div class="stat-label">проектов</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-num">99.9%</div>
+          <div class="stat-label">uptime SLA</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-num">0</div>
+          <div class="stat-label">prod incidents сегодня</div>
+        </div>
+      </div>
+
+      <div class="hero-cta fade-in">
+        <a href="#projects" class="btn btn-primary">./view_projects.sh</a>
+        <a href="#contact" class="btn btn-ghost">ssh contact@arturdev</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="sec-header">
+      <span class="sec-tag">01</span>
+      <h2 class="sec-title">О себе</h2>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-text fade-in">
+        <p>Привет. Я <strong>backend-разработчик</strong> с фокусом на высоконагруженных системах, микросервисной архитектуре и производительных API. Работаю там, где данных много, а ошибки стоят дорого.</p>
+        <p>Начинал с монолитов, дошёл до распределённых систем. Умею строить так, чтобы это <strong>масштабировалось и не падало</strong> в самый неподходящий момент.</p>
+        <p>Верю в чистый код, понятную документацию и <strong>продуманную архитектуру</strong> с самого начала, а не в рефакторинг через год.</p>
+      </div>
+
+      <div class="terminal fade-in">
+        <div class="terminal-bar">
+          <div class="terminal-dot dot-r"></div>
+          <div class="terminal-dot dot-y"></div>
+          <div class="terminal-dot dot-g"></div>
+          <span class="terminal-title">skills.json</span>
+        </div>
+        <div class="terminal-body">
+          <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd">cat skills.json | python3 -m json.tool</span></div>
+          <div class="t-line"><span class="t-out">{</span></div>
+          <div class="t-line t-line-indent"><span class="t-key">"languages"</span><span class="t-out">: [</span><span class="t-val">"Go"</span><span class="t-out">, </span><span class="t-val">"Python"</span><span class="t-out">, </span><span class="t-val">"Rust"</span><span class="t-out">],</span></div>
+          <div class="t-line t-line-indent"><span class="t-key">"databases"</span><span class="t-out">: [</span><span class="t-val">"PostgreSQL"</span><span class="t-out">, </span><span class="t-val">"Redis"</span><span class="t-out">, </span><span class="t-val">"MongoDB"</span><span class="t-out">],</span></div>
+          <div class="t-line t-line-indent"><span class="t-key">"infra"</span><span class="t-out">: [</span><span class="t-val">"Docker"</span><span class="t-out">, </span><span class="t-val">"K8s"</span><span class="t-out">, </span><span class="t-val">"AWS"</span><span class="t-out">],</span></div>
+          <div class="t-line t-line-indent"><span class="t-key">"patterns"</span><span class="t-out">: [</span><span class="t-val">"REST"</span><span class="t-out">, </span><span class="t-val">"gRPC"</span><span class="t-out">, </span><span class="t-val">"Event-Driven"</span><span class="t-out">],</span></div>
+          <div class="t-line t-line-indent"><span class="t-key">"available"</span><span class="t-out">: </span><span class="text-green">true</span></div>
+          <div class="t-line"><span class="t-out">}</span></div>
+          <div class="t-line t-line-offset"><span class="t-comment"># status: open to work</span></div>
+          <div class="t-line"><span class="t-prompt">$</span><span class="blink"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section-alt">
+  <div class="container">
+    <div class="sec-header">
+      <span class="sec-tag">02</span>
+      <h2 class="sec-title">Проекты</h2>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card fade-in">
+        <div class="project-num">PROJECT_001</div>
+        <div class="project-name">PaymentCore</div>
+        <div class="project-desc">Платёжный микросервис с обработкой 50K rps. Двойная запись, идемпотентность, полная трассировка транзакций.</div>
+        <div class="project-tags">
+          <span class="tag">Go</span>
+          <span class="tag">gRPC</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Kafka</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">GitHub</a>
+          <a href="#" class="project-link">Case Study</a>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-num">PROJECT_002</div>
+        <div class="project-name">DataPipeline</div>
+        <div class="project-desc">ETL-система для аналитики в реальном времени. Обрабатывает 200GB/день, latency < 500ms от события до дашборда.</div>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Spark</span>
+          <span class="tag">Airflow</span>
+          <span class="tag">ClickHouse</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">GitHub</a>
+          <a href="#" class="project-link">Docs</a>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-num">PROJECT_003</div>
+        <div class="project-name">AuthGuard</div>
+        <div class="project-desc">Identity Provider с поддержкой OAuth2, OIDC, MFA. 99.99% uptime, < 10ms latency на верификацию токена.</div>
+        <div class="project-tags">
+          <span class="tag">Rust</span>
+          <span class="tag">Redis</span>
+          <span class="tag">JWT</span>
+          <span class="tag">K8s</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">GitHub</a>
+          <a href="#" class="project-link">Demo</a>
+        </div>
+      </div>
+
+      <div class="project-card project-card-placeholder fade-in">
+        <div>
+          <div class="project-placeholder-plus">+</div>
+          <div class="project-placeholder-text">НОВЫЙ ПРОЕКТ<br>В ПРОЦЕССЕ</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="container">
+    <div class="sec-header">
+      <span class="sec-tag">03</span>
+      <h2 class="sec-title">Отзывы</h2>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-text">
+          "Артур спроектировал нашу платёжную систему с нуля. Ни одного инцидента за полтора года в продакшне. Редкое сочетание скорости и качества."
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar">МВ</div>
+          <div>
+            <div class="author-name">Михаил Волков</div>
+            <div class="author-role">CTO @ FinTech Startup</div>
+          </div>
+          <div class="author-stars">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-text">
+          "Взял проект с legacy-болью и превратил в нормальную архитектуру. Документация, тесты, мониторинг — всё по-взрослому."
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar">АС</div>
+          <div>
+            <div class="author-name">Анна Смирнова</div>
+            <div class="author-role">Product Manager @ E-commerce</div>
+          </div>
+          <div class="author-stars">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-text">
+          "Рекомендую как архитектора. Умеет объяснить технические решения бизнесу и не теряться под давлением дедлайнов."
+        </div>
+        <div class="testimonial-author">
+          <div class="author-avatar">ДК</div>
+          <div>
+            <div class="author-name">Дмитрий Козлов</div>
+            <div class="author-role">Engineering Lead @ SaaS Platform</div>
+          </div>
+          <div class="author-stars">★★★★★</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section-alt">
+  <div class="container">
+    <div class="sec-header">
+      <span class="sec-tag">04</span>
+      <h2 class="sec-title">Контакты</h2>
+      <div class="sec-line"></div>
+    </div>
+
+    <div class="contact-layout">
+      <div class="contact-info fade-in">
+        <p class="contact-desc">Открыт к новым проектам, интересным задачам и разговорам об архитектуре. Отвечаю в течение 24 часов.</p>
+
+        <div class="contact-links">
+          <a href="mailto:anvarovartur63@gmail.com" class="contact-item">
+            <span class="contact-icon">@</span>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value">anvarovartur63@gmail.com</div>
+            </div>
+          </a>
+          <a href="https://github.com/arturA34" class="contact-item">
+            <span class="contact-icon">⌘</span>
+            <div>
+              <div class="contact-label">GitHub</div>
+              <div class="contact-value">https://github.com/arturA34</div>
+            </div>
+          </a>
+          <a href="https://t.me/ARTUR_ANV" class="contact-item">
+            <span class="contact-icon">▶</span>
+            <div>
+              <div class="contact-label">Telegram</div>
+              <div class="contact-value">ARTUR_ANV</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap fade-in">
+        <div class="terminal terminal--flush">
+          <div class="terminal-bar">
+            <div class="terminal-dot dot-r"></div>
+            <div class="terminal-dot dot-y"></div>
+            <div class="terminal-dot dot-g"></div>
+            <span class="terminal-title">send_message.sh</span>
+          </div>
+          <div class="terminal-body">
+            <div class="t-line t-line-spaced"><span class="t-prompt">$</span><span class="t-cmd"> ./new_message --interactive</span></div>
+            <div class="contact-form">
+              <div class="form-group">
+                <label class="form-label">name</label>
+                <input type="text" class="form-input" placeholder="Иван Петров">
+              </div>
+              <div class="form-group">
+                <label class="form-label">email</label>
+                <input type="email" class="form-input" placeholder="ivan@company.com">
+              </div>
+              <div class="form-group">
+                <label class="form-label">message</label>
+                <textarea class="form-textarea" placeholder="Привет, хочу обсудить..."></textarea>
+              </div>
+              <button class="btn btn-primary form-submit" type="button">./send.sh</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATUS BAR -->
+<div class="status-bar">
+  <div><span class="status-ok">●</span> ONLINE &nbsp;&nbsp; arturdev@portfolio &nbsp;&nbsp; ~/portfolio/index.html</div>
+  <div>OPEN TO WORK &nbsp;&nbsp; <span class="status-ok">↑↑ 100%</span></div>
+  <div class="status-time" id="time">--:--:--</div>
+</div>
+
+<script src="assets/js/portfolio.js"></script>
+</body>
+</html>
