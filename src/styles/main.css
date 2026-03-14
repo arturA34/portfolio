@@ -606,6 +606,37 @@
     align-self: flex-start;
     margin-top: 8px;
   }
+  .form-submit-status {
+    min-height: 18px;
+    font-size: 11px;
+    letter-spacing: 0.03em;
+    color: var(--text-dim);
+  }
+  .form-submit-status::before {
+    content: '$ ';
+    color: var(--green-dim);
+  }
+  .form-submit-status.status-error {
+    color: var(--red);
+  }
+  .form-submit-status.status-error::before {
+    color: var(--red);
+    content: 'error: ';
+  }
+  .form-submit-status.status-success {
+    color: var(--green);
+  }
+  .form-submit-status.status-success::before {
+    color: var(--green);
+    content: 'ok: ';
+  }
+  .form-submit-status.status-pending {
+    color: var(--amber);
+  }
+  .form-submit-status.status-pending::before {
+    color: var(--amber);
+    content: '... ';
+  }
 
   /* ============ ANIMATIONS ============ */
   .fade-in {
@@ -679,3 +710,4 @@
     .hero-name { font-size: 48px; }
     .status-bar { display: none; }
   }
+
