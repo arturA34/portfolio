@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>~/dev/portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/portfolio.css">
+<link rel="stylesheet" href="/src/styles/main.css">
 </head>
 <body>
 
@@ -33,12 +33,12 @@
     <div class="hero-content">
       <div class="hero-prompt">
         <span class="prompt-host">artur</span>
-        <span class="text-dim">@</span>
+        <span style="color:var(--text-dim)">@</span>
         <span class="prompt-host">server</span>
-        <span class="text-dim">:</span>
+        <span style="color:var(--text-dim)">:</span>
         <span class="prompt-path">~/portfolio</span>
         <span class="prompt-dollar">$</span>
-        <span class="text-dim">cat whoami.txt</span>
+        <span style="color:var(--text-dim)">cat whoami.txt</span>
       </div>
       <div class="hero-name glitch" data-text="ARTUR DEV">ARTUR DEV</div>
       <div class="hero-role">
@@ -102,13 +102,13 @@
         <div class="terminal-body">
           <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd">cat skills.json | python3 -m json.tool</span></div>
           <div class="t-line"><span class="t-out">{</span></div>
-          <div class="t-line t-line-indent"><span class="t-key">"languages"</span><span class="t-out">: [</span><span class="t-val">"Go"</span><span class="t-out">, </span><span class="t-val">"Python"</span><span class="t-out">, </span><span class="t-val">"Rust"</span><span class="t-out">],</span></div>
-          <div class="t-line t-line-indent"><span class="t-key">"databases"</span><span class="t-out">: [</span><span class="t-val">"PostgreSQL"</span><span class="t-out">, </span><span class="t-val">"Redis"</span><span class="t-out">, </span><span class="t-val">"MongoDB"</span><span class="t-out">],</span></div>
-          <div class="t-line t-line-indent"><span class="t-key">"infra"</span><span class="t-out">: [</span><span class="t-val">"Docker"</span><span class="t-out">, </span><span class="t-val">"K8s"</span><span class="t-out">, </span><span class="t-val">"AWS"</span><span class="t-out">],</span></div>
-          <div class="t-line t-line-indent"><span class="t-key">"patterns"</span><span class="t-out">: [</span><span class="t-val">"REST"</span><span class="t-out">, </span><span class="t-val">"gRPC"</span><span class="t-out">, </span><span class="t-val">"Event-Driven"</span><span class="t-out">],</span></div>
-          <div class="t-line t-line-indent"><span class="t-key">"available"</span><span class="t-out">: </span><span class="text-green">true</span></div>
+          <div class="t-line" style="padding-left:16px"><span class="t-key">"languages"</span><span class="t-out">: [</span><span class="t-val">"Go"</span><span class="t-out">, </span><span class="t-val">"Python"</span><span class="t-out">, </span><span class="t-val">"Rust"</span><span class="t-out">],</span></div>
+          <div class="t-line" style="padding-left:16px"><span class="t-key">"databases"</span><span class="t-out">: [</span><span class="t-val">"PostgreSQL"</span><span class="t-out">, </span><span class="t-val">"Redis"</span><span class="t-out">, </span><span class="t-val">"MongoDB"</span><span class="t-out">],</span></div>
+          <div class="t-line" style="padding-left:16px"><span class="t-key">"infra"</span><span class="t-out">: [</span><span class="t-val">"Docker"</span><span class="t-out">, </span><span class="t-val">"K8s"</span><span class="t-out">, </span><span class="t-val">"AWS"</span><span class="t-out">],</span></div>
+          <div class="t-line" style="padding-left:16px"><span class="t-key">"patterns"</span><span class="t-out">: [</span><span class="t-val">"REST"</span><span class="t-out">, </span><span class="t-val">"gRPC"</span><span class="t-out">, </span><span class="t-val">"Event-Driven"</span><span class="t-out">],</span></div>
+          <div class="t-line" style="padding-left:16px"><span class="t-key">"available"</span><span class="t-out">: </span><span style="color:var(--green)">true</span></div>
           <div class="t-line"><span class="t-out">}</span></div>
-          <div class="t-line t-line-offset"><span class="t-comment"># status: open to work</span></div>
+          <div class="t-line" style="margin-top:12px"><span class="t-comment"># status: open to work</span></div>
           <div class="t-line"><span class="t-prompt">$</span><span class="blink"></span></div>
         </div>
       </div>
@@ -117,7 +117,7 @@
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="section-alt">
+<section id="projects" style="background:var(--bg2);">
   <div class="container">
     <div class="sec-header">
       <span class="sec-tag">02</span>
@@ -146,7 +146,7 @@
       <div class="project-card fade-in">
         <div class="project-num">PROJECT_002</div>
         <div class="project-name">DataPipeline</div>
-        <div class="project-desc">ETL-система для аналитики в реальном времени. Обрабатывает 200GB/день, latency < 500ms от события до дашборда.</div>
+        <div class="project-desc">ETL-система для аналитики в реальном времени. Обрабатывает 200GB/день, latency &lt; 500ms от события до дашборда.</div>
         <div class="project-tags">
           <span class="tag">Python</span>
           <span class="tag">Spark</span>
@@ -162,7 +162,7 @@
       <div class="project-card fade-in">
         <div class="project-num">PROJECT_003</div>
         <div class="project-name">AuthGuard</div>
-        <div class="project-desc">Identity Provider с поддержкой OAuth2, OIDC, MFA. 99.99% uptime, < 10ms latency на верификацию токена.</div>
+        <div class="project-desc">Identity Provider с поддержкой OAuth2, OIDC, MFA. 99.99% uptime, &lt; 10ms latency на верификацию токена.</div>
         <div class="project-tags">
           <span class="tag">Rust</span>
           <span class="tag">Redis</span>
@@ -175,10 +175,10 @@
         </div>
       </div>
 
-      <div class="project-card project-card-placeholder fade-in">
+      <div class="project-card fade-in" style="border-style: dashed; display:flex; align-items:center; justify-content:center; min-height:200px; text-align:center;">
         <div>
-          <div class="project-placeholder-plus">+</div>
-          <div class="project-placeholder-text">НОВЫЙ ПРОЕКТ<br>В ПРОЦЕССЕ</div>
+          <div style="color:var(--green-dim); font-size:24px; margin-bottom:8px;">+</div>
+          <div style="color:var(--text-dim); font-size:12px; letter-spacing:0.1em;">НОВЫЙ ПРОЕКТ<br>В ПРОЦЕССЕ</div>
         </div>
       </div>
 
@@ -199,7 +199,7 @@
 
       <div class="testimonial-card fade-in">
         <div class="testimonial-text">
-          "Артур спроектировал нашу платёжную систему с нуля. Ни одного инцидента за полтора года в продакшне. Редкое сочетание скорости и качества."
+          "Алекс спроектировал нашу платёжную систему с нуля. Ни одного инцидента за полтора года в продакшне. Редкое сочетание скорости и качества."
         </div>
         <div class="testimonial-author">
           <div class="author-avatar">МВ</div>
@@ -244,7 +244,7 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section-alt">
+<section id="contact" style="background:var(--bg2);">
   <div class="container">
     <div class="sec-header">
       <span class="sec-tag">04</span>
@@ -275,14 +275,14 @@
             <span class="contact-icon">▶</span>
             <div>
               <div class="contact-label">Telegram</div>
-              <div class="contact-value">ARTUR_ANV</div>
+              <div class="contact-value">@ARTUR_ANV</div>
             </div>
           </a>
         </div>
       </div>
 
       <div class="contact-form-wrap fade-in">
-        <div class="terminal terminal--flush">
+        <div class="terminal" style="margin-bottom:0">
           <div class="terminal-bar">
             <div class="terminal-dot dot-r"></div>
             <div class="terminal-dot dot-y"></div>
@@ -290,21 +290,22 @@
             <span class="terminal-title">send_message.sh</span>
           </div>
           <div class="terminal-body">
-            <div class="t-line t-line-spaced"><span class="t-prompt">$</span><span class="t-cmd"> ./new_message --interactive</span></div>
+            <div class="t-line" style="margin-bottom:20px"><span class="t-prompt">$</span><span class="t-cmd"> ./new_message --interactive</span></div>
             <div class="contact-form">
               <div class="form-group">
                 <label class="form-label">name</label>
                 <input type="text" class="form-input" placeholder="Иван Петров">
               </div>
               <div class="form-group">
-                <label class="form-label">email</label>
-                <input type="email" class="form-input" placeholder="ivan@company.com">
+                <label class="form-label">telegram username</label>
+                <input type="text" class="form-input" id="telegram-input" placeholder="@username или https://t.me/username">
+                <div class="form-hint" id="telegram-validation" aria-live="polite"></div>
               </div>
               <div class="form-group">
                 <label class="form-label">message</label>
                 <textarea class="form-textarea" placeholder="Привет, хочу обсудить..."></textarea>
               </div>
-              <button class="btn btn-primary form-submit" type="button">./send.sh</button>
+              <button class="btn btn-primary form-submit" onclick="handleSubmit(this)">./send.sh</button>
             </div>
           </div>
         </div>
@@ -320,6 +321,7 @@
   <div class="status-time" id="time">--:--:--</div>
 </div>
 
-<script src="assets/js/portfolio.js"></script>
+  <script type="module" src="/src/main.js"></script>
 </body>
 </html>
+
